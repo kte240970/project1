@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>9.0.21022</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C74AEAD4-472A-7F2D-85AE-A6726D43B451}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_4_0;UNITY_3_4;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AIDriverToolkit\Example Scene\Scripts\ColliderFriction.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Example Scene\Scripts\DrivingSpeed.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Example Scene\Scripts\NewDriving.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Example Scene\Scripts\TriggerSound.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIDriver.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIDriverController.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIDriverMotor.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIEventArgs.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIMotorMapping.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIRespawn.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIRespawnController.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIWaypoint.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\AIWaypointEditor.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\BarrierBehaviour.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\DrawLineToNext.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\EventListenerExample.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\Interpolate.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\LevelSpawner.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\NewWheelPosition.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\SetStartPosition.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\SetWheelColliderSettings.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\ShowControllerRaycasts.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\ShowRaycasts.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\ShowWayLines.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\SplineCalculation.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\SplinePath.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\SplinePathWaypoints.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\SwitchOAMode.cs" />
+     <Compile Include="Assets\AIDriverToolkit\Scripts\ViewPointBehaviour.cs" />
+     <Compile Include="Assets\Game\Scripts\EnemyAnimation.cs" />
+     <Compile Include="Assets\Game\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Game\Scripts\Health.cs" />
+     <Compile Include="Assets\Game\Scripts\LookX.cs" />
+     <Compile Include="Assets\Game\Scripts\LookY.cs" />
+     <Compile Include="Assets\Game\Scripts\PlayerGui.cs" />
+     <Compile Include="Assets\Game\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Game\Scripts\Player_real_move.cs" />
+     <Compile Include="Assets\Game\Scripts\RifleWeapon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{420519F6-E89B-EF5D-02FA-9E6917224329}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{457DCF53-CB57-331F-74C8-63EC0331A6AF}</Project>
+      <Name>Assembly-UnityScript-firstpass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
+	
